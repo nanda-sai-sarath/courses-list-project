@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - DevMastery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+        .navbar-nav .nav-link {
+            color: #35507c !important;
+            font-size: larger;
+        }
+        .btn-login {
+            color: #4272c0;
+            background-color: #F7F8FA;
+            border-radius: 5px;
+            border-color: #2d5ead;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-left: 120vh;
+            margin-left: 120vh;
+        }
+        .btn-signup {
+            color: white;
+            background-color: #69A1F8;
+            border-radius: 5px;
+        }
+        .btn-login, .btn-signup {
+            width: 100px;
+        }
+        .header-text {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .header-text h1 {
+            font-size: 4rem;
+        }
+        .animated-text {
+            color: lightblue;
+            animation: colorChange 2s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% { color: lightblue; }
+            100% { color: darkblue; }
+        }
+        .subheader {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .subheader p{
+            font-size: 2.5rem;
+        }
+        .p1{
+            margin-left: 20%;
+        }
+        footer {
+        background-color: #1E272E;
+        color:#F8F8FD;
+        text-align: center;
+        padding: 10px 0;
+        position:relative;
+        bottom: 0;
+        width: 100%;
+        display: flexbox;
+        justify-content:unset;
+        align-items: center;
+    }
+
+        footer img {
+            height: 30px;
+    }
+        footer .social-icons i {
+            margin: 0 10px;
+            color: #F8F8FD;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="DevMastery Logo">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="topcourses.html" style="color:#35507c; font-size: larger; ">Top Courses</a>
+                </li>
+            <form class="d-flex">
+                <a href="login.html" class="btn btn-login"> Log in </a>
+                <a href="signup.html" class="btn btn-signup me-2">Sign up</a>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header-text">
+            <h1>Find your <span class="animated-text">dream</span> <br> Courses quickly</h1><br><br>
+        </div>
+        <div class="subheader">
+            <p>Here are a few <span class="animated-text">Courses</span> for you to join</p><br>
+        </div>
+    </div>
+    <div class="container program-container">
+        <div class="program-card">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <img src="mern.jpg" alt="Placement Guarantee Program">
+                </div>
+                <div class="col-md-6 program-info">
+                    <h2>Placement Guarantee Program</h2>
+                    <ul class="program-benefits">
+                        <li>100% outcome guarantee</li>
+                        <li>200hrs of learning | Completely <span style="color: rgb(15, 97, 231);">LIVE</span></li>
+                        <li>Flexible curriculum + Lifetime access</li>
+                    </ul>
+                    <a href="viewdetails.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="logo.png" alt="DevMastery Logo">
+        <div>
+            <a href="contact.html">Contact Us</a> | <a href="about.html">About</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div>
+            &copy; 2024 DevMastery. All rights reserved.
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

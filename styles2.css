@@ -1,0 +1,47 @@
+.program-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.program-info {
+    padding: 20px;
+}
+.program-details {
+    display: flex;
+    align-items: center;
+}
+.program-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 900px;
+    margin: auto;
+}
+.program-card img {
+    max-width: 100%;
+    height: auto;
+}
+.program-benefits {
+    list-style: none;
+    padding: 0;
+}
+.program-benefits li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.program-benefits li::before {
+    content: '✔';
+    color: green;
+    margin-right: 10px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+}

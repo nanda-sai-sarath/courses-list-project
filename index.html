@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - DevMastery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            overflow: auto;
+
+            color: #1E272E;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+        .btn-login, .btn-signup {
+            width: 100px;
+        }
+        .btn-login {
+            color: #4272c0;
+            background-color: #F7F8FA;
+            border-radius: 5px;
+            border-color: #2d5ead;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+        .btn-signup {
+            color: white;
+            background-color: #5794f6;
+            border-radius: 5px;
+        }
+        .navbar-nav .nav-link {
+            color: #35507c !important;
+            font-size: larger;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .heading h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .heading p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .buttonOne a {
+            color: #fff;
+            background-color: #69A1F8;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #1E272E;
+            color: #e0e0e0;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer img {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        footer a {
+            color: #69A1F8;
+            margin: 0 10px;
+        }
+        .social-icons i {
+            color: #69A1F8;
+            margin: 0 10px;
+        }
+
+        .application-section {
+            background-color: #3a82f7;
+            color: white;
+            text-align: center;
+            padding: 100px 50px;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+        .application-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .application-section p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+        .application-section .btn-get-started {
+            background-color: #00237a;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.25rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .application-section .btn-get-started:hover {
+            background-color: #001b5c;
+        }
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+        .circle-1 {
+            width: 600px;
+            height: 600px;
+            top: -100px;
+            left: -150px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .circle-2 {
+            width: 400px;
+            height: 400px;
+            top: -50px;
+            right: -100px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .circle-3 {
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="DevMastery Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="topcourses.html">Top Courses</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <a href="login.html" class="btn btn-login">Log in</a>
+                <a href="signup.html" class="btn btn-signup me-2">Sign up</a>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="hero-section">
+            <div class="heading">
+                <h2 id="heading1">Learn with Us<br><span class="spantext">interactively</span></h2>
+                <p>Master web development, programming languages, and more with DevMastery interactive courses.</p>
+                <div class="buttonOne">
+                    <a href="login.html">Start Learning Now</a>
+                </div>
+            </div>
+        </section>
+        <div class="index text-center">
+            <h3>EXPLORE THE LEARNING PATH</h3>
+            <h1 class="spantext1">LEARN-APPLY-GROW</h1>
+        </div>
+        <div class="application-section">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <h1>Start learning free Courses NOW</h1>
+            <a class="a1" href="signup.html" target="_blank">Sign up for a free account</a>
+            <div class="buttonOne">
+                <a href="signup.html" class="btn-get-started">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="logo.png" alt="DevMastery Logo">
+        <div>
+            <a href="contact.html">Contact Us</a> | <a href="about.html">About</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div>
+            &copy; 2024 DevMastery. All rights reserved.
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

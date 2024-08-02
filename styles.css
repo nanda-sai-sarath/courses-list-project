@@ -1,0 +1,435 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap);
+*{
+    font-family: DM Sans;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("bgimg.jpg"); */
+}
+
+@media screen and (max-width:750px){
+    body{
+        background-color: aqua;
+    }
+}
+
+nav {
+    overflow: hidden;
+    display: flex;
+    border-bottom: 1px solid #f4f4fc;
+}
+nav a {
+    float: left;
+    display: block;
+    color:#478DF3;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.navbar-brand img {
+    height: 40px;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.index h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.indexH1 h1{
+    font-size: 45px;
+    font-weight: 250;
+}
+.index h3{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#heading1{
+    font-size: 50px;
+}
+
+.heading p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.spantext2{
+    font-size: small;
+}
+
+.spantext{
+    color: transparent;
+    animation: effect 4s ease infinite alternate-reverse;
+}
+.spantext1{
+    color: transparent;
+    animation: effect 4s ease infinite alternate-reverse;
+    animation-delay: 2s;
+}
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(#008000, #00FF00);
+        -webkit-background-clip: text;
+    }
+    25% {
+        background: linear-gradient(#cfea0a, #000FFF);
+        -webkit-background-clip: text;
+    }
+    75% {
+        background: linear-gradient(#3CE7D7, #7075b7);
+        -webkit-background-clip: text;
+    }
+    100% {
+        background: linear-gradient(#3CE7D7, #10b0e6);
+        -webkit-background-clip: text;
+    }
+    0% {
+        background: linear-gradient(#008000, #00FF00);
+        -webkit-background-clip: text;
+    }
+}
+
+.buttonOne {
+    text-align: center;
+    margin-top: 30px;
+    border-color: #2196F3;
+}
+.buttonOne a {
+    display: inline-block;
+    padding: 12px 30px;
+    color:black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    background: #986EF4;
+    box-shadow: 0 0 10px 0 skyblue;
+}
+.buttonOne a:hover {
+    box-shadow: 0 0 20px 0 rgb(88, 171, 205) 0 0 15px rgb(68, 197, 199);
+    transform: scale(1.05);
+}
+.split {
+    margin-left: auto;
+}
+
+.animated-text {
+    color: lightblue;
+    animation: colorChange 2s infinite alternate;
+}
+@keyframes colorChange {
+    0% { color: lightblue; }
+    100% { color: darkblue; }
+}
+
+footer {
+    background-color: #1E272E;
+    color:#F8F8FD;
+    text-align: center;
+    padding: 10px 0;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    display: flexbox;
+    justify-content:unset;
+    align-items: center;
+}
+
+footer img {
+    height: 30px;
+}
+footer .social-icons i {
+    margin: 0 10px;
+    color: #F8F8FD;
+}
+
+/*contact page*/
+.contactInfo {
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-group {
+    padding: 10px;
+    width: 290px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flexbox;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+    width: 150%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 150%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*About page*/
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+/*Register page*/
+.registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    margin: auto;
+}
+.myform h2 {
+    text-align: center;
+}
+.myform input[type="text"],
+.myform input[type="password"],
+.myform input[type="email"] ,
+.myform input[type="number"],
+.myform input[type="tel"],
+.myform input[type="email"],
+.myform select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.myform input[type="radio"],
+.myform input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+/*register success*/
+.confirmation-message {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    margin: auto;
+}
+.confirmation-message h2 {
+    text-align: center;
+}
+.confirmation-message p {
+    text-align: center;
+}
+.confirmation-message a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.confirmation-message a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/*login page*/
+.myform {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    margin: auto;
+}
+.mform h2 {
+    text-align: center;
+}
+.myform input[type="text"],
+.myform input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.myform input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #142683;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.myform input[type="submit"]:hover {
+    background-color: #1E38C1;
+    transform: scale(1.05);
+}
+/*course list*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.course {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.course img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.course h3 {
+    margin: 10px;
+}
+.course:hover {
+    transform: scale(1.05);
+}
+.course a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/*course content*/
+.section {
+    margin-bottom: 20px;
+}
+.section h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.videos, .pdfs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.video, .pdf {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.video iframe, .pdf iframe {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.video h3, .pdf h3 {
+    margin: 10px;
+}
+
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        flex: 1 0 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+
